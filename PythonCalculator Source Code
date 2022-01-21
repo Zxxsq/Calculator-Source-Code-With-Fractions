@@ -1,0 +1,35 @@
+#imports
+from math import *
+from fractions import *
+#GetInputNormal
+print ("Calculator!")
+startdecision = input("Fraction Freefield or Calculator?: ")
+if startdecision == 'Fraction Freefield':
+  print(" ")
+  print("Welcome to fraction freefield! Use Fraction(Number) to convert decimals to fractions, or use Fraction (Number,  Number to define a fraction, First number = Numerator, Second Number = Denominator, Use +,-,*,/ to do equations with the fractions! For example, Fraction(3, 5) + Fraction(4, 2) To get the result! Check out https://www.youtube.com/watch?v=bnTWjeubB3I for more information!")
+  print(" ")
+if startdecision == 'Calculator':
+
+  def calculator():
+    num1 = input("Enter A Number: ")
+    Operator = input("Enter An Operator (+,-,*,/): ")
+    num2 = input("Enter Another Number: ")
+    #DoSimpleMath
+    if Operator == '+':
+      result = float(num1) + float(num2)
+    if Operator == '-':
+      result = float(num1) - float(num2)
+    if Operator == '*':
+      result = float(num1) * float(num2)
+    if Operator == '/':
+      result = float(num1) / float(num2)
+
+
+  #PrintResult
+    print("Answer: ") 
+    print(result)
+    print(" ")
+  #Loop 
+  while True: 
+    calculator()
+
